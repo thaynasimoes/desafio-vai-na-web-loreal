@@ -13,6 +13,11 @@ body {
 .logo {
   width: 10vw;
 }
+@media (max-width: 650px) {
+  .logo {
+    width: 35vw;
+  }
+}
 
 .cabeçalho {
   display: flex;
@@ -22,6 +27,11 @@ body {
   top: 0%;
   background-color: #EFEEF3;
 }
+@media (max-width: 650px) {
+  .cabeçalho {
+    flex-direction: column;
+  }
+}
 .cabeçalho .menu {
   display: flex;
   justify-content: space-around;
@@ -29,18 +39,23 @@ body {
   width: 90vw;
   list-style-type: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .cabeçalho .menu {
-    justify-content: center;
     flex-direction: column;
+    padding-top: 20px;
   }
   .cabeçalho .menu li {
-    padding: 5px;
+    padding-top: 15px;
   }
 }
 
 .mulheres {
   width: 100%;
+}
+@media (max-width: 650px) {
+  .mulheres {
+    display: none;
+  }
 }
 
 .section1 {
@@ -48,21 +63,44 @@ body {
   justify-content: space-around;
   align-items: center;
   padding-top: 30px;
+  flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .section1 {
-    justify-content: center;
-    flex-direction: column;
+    padding-top: 300px;
   }
+}
+.section1 img {
+  width: 400px;
 }
 .section1 .texto1 {
   text-align: center;
   width: 40%;
   font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section1 .texto1 h2 {
   font-weight: 400;
   padding-bottom: 20px;
+}
+@media (max-width: 650px) {
+  .section1 .texto1 h2 {
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+}
+.section1 .texto1 p {
+  width: 80%;
+  font-size: 27px;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  .section1 .texto1 {
+    width: 100%;
+    padding-top: 50px;
+  }
 }
 
 .section2 {
@@ -71,15 +109,22 @@ body {
   padding-top: 30px;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .section2 {
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }
 .section2 .texto2 {
   text-align: start;
   width: 30%;
+}
+@media (max-width: 650px) {
+  .section2 .texto2 {
+    width: 100%;
+  }
 }
 .section2 .texto2 h2 {
   font-weight: 400;
@@ -89,4 +134,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+@media (max-width: 650px) {
+  .section2 .imagens {
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
